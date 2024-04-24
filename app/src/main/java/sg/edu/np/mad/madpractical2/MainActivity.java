@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 boolean state = btn.changeState();
-                if(!state){
+                if(state == true){
                     btn.name = "Follow";
                     btnFollow.setText(btn.name);
 
                 }
-                else{
+                else if(state == false){
                     btn.name = "Unfollow";
                     btnFollow.setText(btn.name);
                 }
